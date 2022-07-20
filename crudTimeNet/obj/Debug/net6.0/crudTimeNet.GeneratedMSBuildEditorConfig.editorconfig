@@ -11,16 +11,12 @@ build_property.RootNamespace = crudTimeNet
 build_property.ProjectDir = C:\Users\eva_v\testeTecNess\crudTimeNet\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\eva_v\testeTecNess\crudTimeNet
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/eva_v/testeTecNess/crudTimeNet/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/eva_v/testeTecNess/crudTimeNet/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/eva_v/testeTecNess/crudTimeNet/Views/Shared/Error.cshtml]

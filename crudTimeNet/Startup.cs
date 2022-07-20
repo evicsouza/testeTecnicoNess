@@ -26,6 +26,7 @@ namespace crudTimeNet
         {
             services.AddDbContext<Context> (options => options.UseSqlServer (Configuration.GetConnectionString ("DefaultConnection")));
             services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

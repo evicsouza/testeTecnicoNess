@@ -2,8 +2,8 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:64396",
+    "iis": {
+      "applicationUrl": "https://localhost:crudJogadores",
       "sslPort": 44327
     }
   },
@@ -17,9 +17,10 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "IIS Express": {
-      "commandName": "IISExpress",
+    "IIS": {
+      "commandName": "IIS",
       "launchBrowser": true,
+      "launchUrl": "https://localhost/crudJogadores",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
