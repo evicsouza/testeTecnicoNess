@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using crudTimeNet.Models;
 
@@ -53,7 +48,7 @@ namespace crudTimeNet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Poderes,Descricao,Foto,Ativo")] Jogador jogador)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Posicao")] Jogador jogador)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +81,7 @@ namespace crudTimeNet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Nome,Poderes,Descricao,Foto,Ativo")] Jogador jogador)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Nome,Posicao")] Jogador jogador)
         {
             if (id != jogador.Id)
             {
