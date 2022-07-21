@@ -1,8 +1,10 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace crudTimeNet.Models {
-    public class Jogador {
+namespace crudTimeNet.Models
+{
+    public class Jogador
+    {
         [Key]
         public Guid Id { get; set; }
 
