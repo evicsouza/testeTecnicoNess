@@ -21,9 +21,9 @@ namespace crudTimeNet.Controllers
         // GET: Jogadores
         public async Task<IActionResult> Index()
         {
-              return _context.Jogadores != null ? 
-                          View(await _context.Jogadores.ToListAsync()) :
-                          Problem("Entity set 'Context.Jogadores'  is null.");
+            return _context.Jogadores != null ?
+                        View(await _context.Jogadores.ToListAsync()) :
+                        Problem("Entity set 'Context.Jogadores'  is null.");
         }
 
         // GET: Jogadores/Details/5
@@ -150,14 +150,14 @@ namespace crudTimeNet.Controllers
             {
                 _context.Jogadores.Remove(jogador);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool JogadorExists(Guid id)
         {
-          return (_context.Jogadores?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Jogadores?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
