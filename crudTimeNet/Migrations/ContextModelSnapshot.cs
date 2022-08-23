@@ -40,6 +40,25 @@ namespace crudTimeNet.Migrations
 
                     b.ToTable("Jogadores");
                 });
+
+            modelBuilder.Entity("crudTimeNet.Models.Jogo", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Data")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Oponente")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Jogos");
+                });
 #pragma warning restore 612, 618
         }
     }

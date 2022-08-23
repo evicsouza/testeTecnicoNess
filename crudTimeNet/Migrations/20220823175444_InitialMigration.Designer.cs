@@ -12,8 +12,8 @@ using crudTimeNet.Models;
 namespace crudTimeNet.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220719171517_Initial")]
-    partial class Initial
+    [Migration("20220823175444_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,6 +41,25 @@ namespace crudTimeNet.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Jogadores");
+                });
+
+            modelBuilder.Entity("crudTimeNet.Models.Jogo", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Data")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Oponente")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Jogos");
                 });
 #pragma warning restore 612, 618
         }
